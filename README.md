@@ -1,5 +1,7 @@
 # TFM - Máster Ciencia de datos
-Estudio del conjunto de datos NHANES mediante el empleo de técnicas de aprendizaje no supervisado.
+**Estudio del conjunto de datos NHANES mediante el empleo de técnicas de aprendizaje no supervisado.**
+
+El repositorio contin el código generado durante la ejecución del trabajo de fin de máster **Estudio del conjunto de datos NHANES mediante el empleo de técnicas de aprendizaje no supervisado.**
 
 ## Descripción de los ficheros
 
