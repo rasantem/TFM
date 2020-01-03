@@ -10,4 +10,4 @@ Estudio del conjunto de datos NHANES mediante el empleo de técnicas de aprendiz
 - **src/model/hac_model.ipynb**: Modelo de agrupamiento jerárquico aglomerativo.
 - **src/model/DBSCAN.ipynb**:Modelo de agrupamiento basado en densidad.
 - **src/model/log_reg.ipynb**:Modelo de regresión logística.
-- **src/webapp/**: En esta carpeta se encuentra el código necesario para el despliegue de la aplicación web que incluye el medelo de clasificación.
+- **src/webapp/**: En esta carpeta se encuentra el código necesario para el despliegue de la aplicación web que incluye el modelo de clasificación.
