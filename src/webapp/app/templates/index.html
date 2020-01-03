@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ apli.Desc }}</h1>
+    <div class="block-with-text"><p>Manual de uso: <br><b>{{ manual.man }}</b></p></div>
+    {% for desc in descs %}
+    <div class="block-with-text"><p>Descripción cluster {{ desc.cluster.clust }} : <br><b>{{ desc.desc }}</b></p></div>
+    {% endfor %}
+{% endblock %}

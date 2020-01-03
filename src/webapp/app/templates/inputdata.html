@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Introducir datos del individuo.</h1>
+    <div class="formulario">
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+          {{ form.bmi.label }}
+          {{ form.bmi(size=10, id='small') }}
+          {% for error in form.bmi.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+          {{ form.waist.label }}
+          {{ form.waist(size=10, id='small') }}
+          {% for error in form.waist.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+          {{ form.bpx.label }}
+          {{ form.bpx(size=10, id='small') }}
+          {% for error in form.bpx.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+          {{ form.diq.label }}
+          {{ form.diq(id='middle') }}
+      </p>
+      <p>
+          {{ form.lbxglu.label }}
+          {{ form.lbxglu(size=10, id='small') }}
+          {% for error in form.lbxglu.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+      </p>
+      <p>
+          {{ form.lbxin.label }}
+          {{ form.lbxin(size=10, id='small') }}
+          {% for error in form.lbxin.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+      </p>
+      <p>
+          {{ form.hiq.label }}
+          {{ form.hiq(id='middle') }}
+      </p>
+      <p>
+          {{ form.hod.label }}
+          {{ form.hod(id='middle') }}
+      </p>
+      <p>
+          {{ form.hoq.label }}
+          {{ form.hoq(id='middle') }}
+      </p>
+      <p>
+          {{ form.hsd.label }}
+          {{ form.hsd(id='middle') }}
+      </p>
+      <p>
+          {{ form.inq.label }}
+          {{ form.inq(id='middle') }}
+      </p>
+      <p>
+          {{ form.mcq.label }}
+          {{ form.mcq(id='middle') }}
+      </p>
+      <p>
+          {{ form.mcq3.label }}
+          {{ form.mcq3(id='middle') }}
+      </p>
+      <p>
+          {{ form.paq650.label }}
+          {{ form.paq650(id='middle') }}
+      </p>
+      <p>
+          {{ form.paq665.label }}
+          {{ form.paq665(id='middle') }}
+      </p>
+      <p>
+          {{ form.paq710.label }}
+          {{ form.paq710(id='middle') }}
+      </p>
+      <p>
+          {{ form.paq715.label }}
+          {{ form.paq715(id='middle') }}
+      </p>
+      <p>
+          {{ form.rhq.label }}
+          {{ form.rhq(id='middle') }}
+      </p>
+      <p>
+          {{ form.sld.label }}
+          {{ form.sld(id='middle') }}
+      </p>
+      <p>
+          {{ form.smq.label }}
+          {{ form.smq(id='middle') }}
+      </p>
+      <p>
+          {{ form.riag.label }}
+          {{ form.riag(id='middle') }}
+      </p>
+      <p>
+          {{ form.rida.label }}
+          {{ form.rida(size=10, id='small') }}
+          {% for error in form.rida.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+      </p>
+      <p>
+          {{ form.rid.label }}
+          {{ form.rid(id='middle') }}
+      </p>
+      <p>
+          {{ form.dmd.label }}
+          {{ form.dmd(id='middle') }}
+      </p>
+      <p>{{ form.submit(id='b_clas') }}</p>
+    </form>
+    </div>
+
+    {% if prediction_text %}
+    <div class="result">El individuo pertene al cluster : <strong>{{ prediction_text }}</strong></div>
+    {% else %}
+    <div></div>
+    {% endif %}
+
+{% endblock %}
